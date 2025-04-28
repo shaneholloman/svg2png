@@ -42,13 +42,13 @@ This document outlines a standardized, step-by-step process for creating command
 
     - Install core TypeScript dev dependencies:
 
-    ```bash
+    ```sh
     npm install typescript @types/node ts-node --save-dev
     ```
 
    - Generate `tsconfig.json`:
 
-    ```bash
+    ```sh
     npx tsc --init
     ```
 
@@ -81,13 +81,13 @@ This document outlines a standardized, step-by-step process for creating command
 
     - Install necessary runtime libraries identified in Phase 0:
 
-    ```bash
+    ```sh
     npm install <core-dependency-1> <core-dependency-2>
     ```
 
    - Install `commander` for CLI argument parsing:
 
-    ```bash
+    ```sh
     npm install commander
     ```
 
@@ -95,7 +95,7 @@ This document outlines a standardized, step-by-step process for creating command
 
     - Install type definitions for runtime dependencies:
 
-    ```bash
+    ```sh
     npm install @types/<core-dependency-1> @types/commander --save-dev
     ```
 
@@ -175,7 +175,7 @@ This document outlines a standardized, step-by-step process for creating command
 
 1. **Install Testing Framework:**
 
-    ```bash
+    ```sh
     npm install jest @types/jest ts-jest --save-dev
     ```
 
