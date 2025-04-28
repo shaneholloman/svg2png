@@ -8,6 +8,8 @@
 - Test suite (`tests/svg2png.test.ts`) created covering core features and sizing options.
 - Test file moved into `tests/` directory and tests pass from new location.
 - `README.md` created with setup, usage, and feature documentation.
+- Global installation via `npm link` implemented and tested.
+- GitHub Actions CI workflow (`.github/workflows/ci.yml`) created and corrected for automated testing (includes build step).
 
 ## 2. What's Left to Build / Setup
 
@@ -24,6 +26,7 @@
 - **[DONE]** Global installation setup (`bin` field in `package.json`).
 - **[DONE]** Global installation performed (`npm link`).
 - **[DONE]** Global command tested successfully (`svg2png ...`).
+- **[DONE]** GitHub Actions CI workflow created and corrected (`.github/workflows/ci.yml`).
 
 ## 4. Known Issues / Blockers
 
