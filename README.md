@@ -2,6 +2,9 @@
 
 A command-line tool built with Node.js and TypeScript to convert SVG files to PNG format with customizable output dimensions, scaling, and background color.
 
+> [!NOTE]
+> This tool is destined for the [markdown-moose](https://github.com/shaneholloman/markdown-moose) vscode extension, but can be used independently.
+
 ## Features
 
 - Convert SVG files to PNG format.
