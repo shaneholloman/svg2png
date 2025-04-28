@@ -2,25 +2,18 @@
 
 ## 1. Current Focus
 
-Verifying local test execution and CI workflow configuration after refactoring to use `dist/` directory.
+Documenting the generalized workflow used to create the `svg2png` tool.
 
 ## 2. Recent Changes
 
-- Completed initial project setup, testing, documentation, global linking, and CI workflow setup.
-- Refactored project to use `dist/` for build output (`tsconfig.json`, `package.json`, `.gitignore`, `README.md` updated).
-- Rebuilt project, re-linked global command, and verified functionality.
-- Updated `jest.config.js` to ignore `/dist/` path.
-- Confirmed local tests (`npm test`) run correctly against source files only and pass.
+- Completed all setup, testing, refactoring, documentation (`README.md`), global linking, and CI workflow steps for the `svg2png` tool.
+- Created `docs/generalized-cli-tool-workflow.md` documenting the end-to-end process used.
 
 ## 3. Next Steps
 
-- All requested setup, refactoring, testing, and CI configuration steps are complete.
+- All requested tasks are complete.
 
 ## 4. Active Decisions & Considerations
 
-- Refactored build output to `dist/`.
-- Updated all relevant configuration files.
-- Rebuilt project, re-linked global command, and verified functionality.
-- Corrected `jest.config.js` to prevent tests running against compiled output.
-- Verified local tests pass correctly after refactoring.
-- Confirmed existing CI workflow (`.github/workflows/ci.yml`) is suitable for the refactored structure (includes build step before test).
+- Successfully completed all steps for `svg2png` tool creation and refinement.
+- Documented the generalized process in `docs/generalized-cli-tool-workflow.md` for future reuse, incorporating all phases from requirement analysis to CI setup.
