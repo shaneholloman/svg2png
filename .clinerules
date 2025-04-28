@@ -1,0 +1,64 @@
+# Cline Operational Rules for svg2png Project
+
+## 1. Code Style and Standards
+
+### 1.1. Status Indicators
+
+- **REQUIRED**: Use text-based status indicators: `[PASS]` and `[FAIL]`.
+- Use appropriate color coding in console output where possible (e.g., using `chalk` if added).
+
+### 1.2. Emoji Usage Policy
+
+- **STRICT PROHIBITION**: No emojis are allowed anywhere in the project (code, docs, logs, commits, etc.).
+
+### 1.3. Shell Script Requirements
+
+- **STRICT REQUIREMENT**: All shell scripts must pass `shellcheck -x script.sh` validation with no errors or warnings.
+- Use proper quoting, variable handling, error checking, shebang lines, and file permissions.
+- Adhere to modern shell scripting practices.
+
+## 2. Documentation Standards
+
+### 2.1. Memory Bank Files (`memory-bank/*.md`)
+
+- **REQUIRED**: Read ALL memory bank files at the start of EVERY task.
+- Update Memory Bank when:
+    - Discovering new project patterns.
+    - After implementing significant changes.
+    - When user requests with **update memory bank** (review ALL files).
+    - When context needs clarification.
+- Follow strict markdown linting rules (single blank lines, spacing, no trailing spaces, code block languages).
+- Use descriptive, hyphenated file names for any new context files.
+- Maintain the core file structure: `projectBrief.md`, `productContext.md`, `systemPatterns.md`, `techContext.md`, `activeContext.md`, `progress.md`.
+
+### 2.2. Memory Bank Management (Cross-Branch)
+
+- Memory Bank files are global resources.
+- Update Procedure:
+    1. `git branch --show-current`
+    2. `git stash save "Memory bank updates"`
+    3. `git checkout main`
+    4. `git stash apply`
+    5. `git add memory-bank/*.md && git commit -m "docs: update memory bank"`
+    6. `git push origin main`
+    7. `git checkout <feature-branch>`
+    8. `git merge main --no-edit`
+    9. `git push origin <feature-branch>`
+    10. Repeat 7-9 for other active branches.
+- Use `docs:` prefix for Memory Bank commit messages.
+
+### 2.3. `.clinerules` File
+
+- This file defines operational standards, HOW we work.
+- Project documentation and technical details belong in `memory-bank/`.
+
+## 3. Schema Implementation Standards (If Applicable)
+
+- Follow unified schema architecture if schemas are introduced.
+- Combine validation-first with relationship-focused documentation.
+- Maintain separation of metadata, content, and relationships.
+
+## 4. General Operations
+
+- Initialize Memory Bank and `.clinerules` at the start of new projects.
+- Refer to Memory Bank files (`activeContext.md`, `progress.md`) frequently to track state.
