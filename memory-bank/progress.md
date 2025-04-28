@@ -13,10 +13,11 @@
 - Build output configured to use `dist/` directory (`tsconfig.json`, `package.json`, `.gitignore`).
 - Local test execution (`npm test`) verified to run correctly against source files after `dist/` refactor and `jest.config.js` update.
 - Generalized workflow documented in `docs/generalized-cli-tool-workflow.md`.
+- Technical brief documenting `sharp` integration challenges created (`docs/sharp-integration-technical-brief.md`).
 
 ## 2. What's Left to Build / Setup
 
-- No further setup steps remaining based on current requests.
+- Discuss potential alternatives to `sharp` for integration into `markdown-moose`.
 
 ## 3. Current Status
 
@@ -37,6 +38,7 @@
 - **[DONE]** Corrected `jest.config.js` to ignore `dist/`.
 - **[DONE]** Verified local tests (`npm test`) pass correctly after refactoring.
 - **[DONE]** Created generalized workflow documentation (`docs/generalized-cli-tool-workflow.md`).
+- **[DONE]** Created technical brief on `sharp` integration challenges (`docs/sharp-integration-technical-brief.md`).
 
 ## 4. Known Issues / Blockers
 
