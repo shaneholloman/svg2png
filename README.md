@@ -45,7 +45,7 @@ A command-line tool built with Node.js and TypeScript to convert SVG files to PN
     npm run build
     ```
 
-    (This step compiles `.ts` files to `.js` in the `dist/` directory, although `ts-node` allows running directly from `.ts` files via `npm start`)
+    (This step first cleans the `dist/` directory and then compiles `.ts` files to `.js` inside `dist/`)
 
 ## Usage
 
@@ -119,7 +119,7 @@ To make the `svg2png` command available system-wide, you can use `npm link`:
     npm run build
     ```
 
-    *(Note: This creates `svg2png.js` in the project root based on the default `tsconfig.json`. If your `outDir` is different, ensure the `bin` path in `package.json` matches.)*
+    *(Note: This creates `svg2png.js` inside the `dist/` directory as configured in `tsconfig.json`. The `bin` path in `package.json` points to `dist/svg2png.js`.)*
 3. **Link the package globally:**
 
     ```sh

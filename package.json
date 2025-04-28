@@ -2,12 +2,13 @@
   "name": "svg2png",
   "version": "1.0.0",
   "description": "",
-  "main": "svg2png.js",
+  "main": "dist/svg2png.js",
   "bin": {
-    "svg2png": "svg2png.js"
+    "svg2png": "dist/svg2png.js"
   },
   "scripts": {
-    "build": "tsc",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
     "start": "ts-node svg2png.ts",
     "test": "jest"
   },

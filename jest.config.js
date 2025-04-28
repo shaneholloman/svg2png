@@ -2,6 +2,8 @@
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
+  // Ignore compiled JavaScript files in dist directory
+  testPathIgnorePatterns: ['/node_modules/', '/dist/'],
   // Optional: Add setup files, reporters, etc. here
   // setupFilesAfterEnv: ['./jest.setup.js'],
   // Clear mocks between tests
