@@ -1,5 +1,7 @@
 # SVG to PNG Converter (`svg2png`)
 
+[![Node.js CI](https://github.com/shaneholloman/svg2png/actions/workflows/ci.yml/badge.svg)](https://github.com/shaneholloman/svg2png/actions/workflows/ci.yml)
+
 A command-line tool built with Node.js and TypeScript to convert SVG files to PNG format with customizable output dimensions, scaling, and background color.
 
 > [!NOTE]
