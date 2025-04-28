@@ -2,19 +2,25 @@
   "name": "svg2png",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "svg2png.js",
+  "bin": {
+    "svg2png": "svg2png.js"
+  },
   "scripts": {
     "build": "tsc",
     "start": "ts-node svg2png.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@types/jest": "^29.5.14",
     "@types/node": "^22.15.2",
     "@types/sharp": "^0.31.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },

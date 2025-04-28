@@ -116,20 +116,20 @@ convertSvgToPng();
 ## Setup Instructions
 
 1. Create a new directory for your project:
-```bash
+```sh
 mkdir svg2png
 cd svg2png
 ```
 
 2. Initialize a TypeScript project:
-```bash
+```sh
 npm init -y
 npm install typescript @types/node ts-node --save-dev
 npx tsc --init
 ```
 
 3. Install required dependencies:
-```bash
+```sh
 npm install sharp commander
 npm install @types/sharp --save-dev
 ```
@@ -146,7 +146,7 @@ npm install @types/sharp --save-dev
 
 ## Usage Examples
 
-```bash
+```sh
 # Basic usage
 ts-node svg2png.ts --input input.svg --output output.png
 
@@ -164,12 +164,12 @@ ts-node svg2png.ts --input input.svg --output output.png --background "#ffffff"
 
 After building with `npm run build`, you can make it globally accessible:
 
-```bash
+```sh
 npm link
 ```
 
 Then use it anywhere:
-```bash
+```sh
 svg2png --input logo.svg --output logo.png --width 200
 ```
 

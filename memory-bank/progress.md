@@ -2,25 +2,28 @@
 
 ## 1. What Works
 
-- The Memory Bank directory structure has been created.
-- Core documentation files (`projectBrief.md`, `productContext.md`, `systemPatterns.md`, `techContext.md`, `activeContext.md`, `progress.md`) have been initialized.
-- `.clinerules` file created.
-- Node.js project initialized (`package.json` created).
-- Dependencies installed (`node_modules` populated, `package-lock.json` created).
-- TypeScript configured (`tsconfig.json` created).
-- `svg2png.ts` source file created.
-- `package.json` updated with `build` and `start` scripts.
+- Initial project setup completed as per `svg2png-setup.md`.
+- Basic script functionality verified via manual test (`npm start -- ...`).
+- Jest testing framework installed and configured (`jest.config.js`, `package.json` updated).
+- Test suite (`tests/svg2png.test.ts`) created covering core features and sizing options.
+- Test file moved into `tests/` directory and tests pass from new location.
+- `README.md` created with setup, usage, and feature documentation.
 
 ## 2. What's Left to Build / Setup
 
-- Implement global installation steps (`npm link`) if desired by the user.
+- No further setup steps remaining based on current requests.
 
 ## 3. Current Status
 
 - **[DONE]** Initial project setup and environment configuration.
 - **[DONE]** Initial build verification (`npm run build` successful).
-- **[DONE]** Basic script functionality testing (`npm start -- --input assets/icon.svg --output output/icon.png` successful).
-- **[PENDING]** Global installation (optional).
+- **[DONE]** Basic script functionality testing (manual).
+- **[DONE]** Test suite implementation (`tests/svg2png.test.ts`).
+- **[DONE]** Test suite execution (`npm test` successful).
+- **[DONE]** `README.md` creation.
+- **[DONE]** Global installation setup (`bin` field in `package.json`).
+- **[DONE]** Global installation performed (`npm link`).
+- **[DONE]** Global command tested successfully (`svg2png ...`).
 
 ## 4. Known Issues / Blockers
 
